@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="64dp"
+    tools:context="com.example.bluecanvas.LoginActivity">
+
+    <EditText
+        android:id="@+id/editId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input ID"
+        android:text="tizen"/>
+
+    <EditText
+        android:id="@+id/editPw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editId"
+        android:layout_marginTop="30dp"
+        android:hint="Input PW"
+        android:inputType="textPassword"
+        android:text="tizen"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPw"
+        android:layout_marginTop="30dp"
+        android:onClick="onClick"
+        android:text="Login"/>
+
+    <Button
+        android:id="@+id/btnJoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginTop="30dp"
+        android:onClick="onClick"
+        android:text="Join"/>
+
+</RelativeLayout>
